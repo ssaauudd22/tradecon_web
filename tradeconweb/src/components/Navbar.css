@@ -17,9 +17,21 @@
 }
 
 .navbar-logo {
-  height: 60px; /* Increased size */
+  height: 48px;
   width: auto;
   object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 6px;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+}
+
+.dark .navbar-logo {
+  filter: brightness(1.1) drop-shadow(0 1px 2px rgba(255,255,255,0.1));
 }
 
 .navbar-title {
@@ -55,5 +67,166 @@
 
   .navbar-logo {
     height: 32px;
+  }
+}
+
+/* Toggle Switch Styles */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mode-label {
+  font-size: 1.2rem;
+  user-select: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.3s ease;
+}
+
+/* The round knob inside the slider */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* When checked (dark mode on) */
+.switch input:checked + .slider {
+  background-color: #4f46e5; /* Indigo */
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  display: inline-block;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #4f46e5; /* Indigo for hover */
+  outline: none;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 120%; /* Below nav item */
+  left: 0;
+  background-color: #222;
+  border-radius: 6px;
+  min-width: 180px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+/* Show dropdown on hover/focus */
+.nav-item.dropdown:hover > .dropdown-menu,
+.nav-item.dropdown:focus-within > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+.dropdown-link:hover,
+.dropdown-link:focus {
+  background-color: #4f46e5;
+  outline: none;
+}
+
+/* Responsive tweak for navbar */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    box-shadow: none;
+    background-color: transparent;
+    padding-left: 1rem;
+  }
+
+  .dropdown-link {
+    padding-left: 2rem;
+    background: none !important;
+    color: white;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
   }
 }

@@ -1,0 +1,68 @@
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 280px;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 9999;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.chatbot-header {
+  background-color: #003973;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 12px 12px 0 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatbot-body {
+  background: white;
+  border-radius: 0 0 12px 12px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+  animation: fadeIn 0.3s ease;
+}
+
+.chatbot-message {
+  margin-bottom: 0.5rem;
+}
+
+.chatbot-placeholder {
+  font-size: 0.85rem;
+  color: #aaa;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hidden state (button only) */
+.chatbot-container:not(.open) .chatbot-body {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .chatbot-container {
+    width: 90%;
+    right: 5%;
+    bottom: 15px;
+  }
+}

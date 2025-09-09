@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import {BrowserRouter} from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Chatbot from './components/Chatbot';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Projects from './components/Projects';
-import Testimonials from './components/Testimonials';
+import Partners from './components/Partners';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
         <Hero />
         <Services />
         <Projects />
-        <Testimonials />
+        <Partners />
         <Footer />
+        <Chatbot />
       </div>
     </BrowserRouter>
   );
