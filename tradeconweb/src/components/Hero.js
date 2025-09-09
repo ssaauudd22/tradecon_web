@@ -33,32 +33,41 @@ const Hero = () => {
           <a href="#projects" className="btn">See Our Work</a>
         </div>
 
-        <form className="quote-form" onSubmit={handleSubmit}>
+        <form className="quote-form" onSubmit={handleSubmit} aria-label="Get a Free Quote">
           <h3>Get a Free Quote</h3>
 
+          <label htmlFor="name">Your Name</label>
           <input
+            id="name"
             type="text"
             name="name"
             placeholder="Your Name"
             required
             value={formData.name}
             onChange={handleChange}
+            aria-required="true"
           />
 
+          <label htmlFor="email">Email</label>
           <input
+            id="email"
             type="email"
             name="email"
             placeholder="Email"
             required
             value={formData.email}
             onChange={handleChange}
+            aria-required="true"
           />
 
+          <label htmlFor="audience">Who is this for?</label>
           <select
+            id="audience"
             name="audience"
             required
             value={formData.audience}
             onChange={handleChange}
+            aria-required="true"
           >
             <option value="">Who is this for?</option>
             <option value="Company">Company</option>
@@ -66,31 +75,42 @@ const Hero = () => {
           </select>
 
           {formData.audience === 'Company' && (
-            <input
-              type="text"
-              name="companyName"
-              placeholder="Company Name"
-              required
-              value={formData.companyName}
-              onChange={handleChange}
-            />
+            <>
+              <label htmlFor="companyName">Company Name</label>
+              <input
+                id="companyName"
+                type="text"
+                name="companyName"
+                placeholder="Company Name"
+                required
+                value={formData.companyName}
+                onChange={handleChange}
+                aria-required="true"
+              />
+            </>
           )}
 
+          <label htmlFor="phone">Phone Number</label>
           <input
+            id="phone"
             type="tel"
             name="phone"
             placeholder="Phone Number"
             required
             value={formData.phone}
             onChange={handleChange}
+            aria-required="true"
           />
 
+          <label htmlFor="description">Project Description</label>
           <textarea
+            id="description"
             name="description"
             placeholder="Project Description"
             required
             value={formData.description}
             onChange={handleChange}
+            aria-required="true"
           />
 
           <button type="submit">Get a Quote</button>

@@ -1,13 +1,15 @@
+
 import React, { useEffect, useRef } from 'react';
+import Card from './Card';
 import BlackHouse from '../assets/BlackHouse.png';
 import LuxuryVilla from '../assets/luxuryvilla.png';
 import Plaza from '../assets/plaza.png';
 
 const Projects = () => {
   const projects = [
-    { title: 'Residential Complex', image: BlackHouse },
-    { title: 'Commercial Plaza', image: Plaza },
-    { title: 'Luxury Villa', image: LuxuryVilla },
+    { title: 'Residential Complex', image: BlackHouse, link: '/projects/residential-complex' },
+    { title: 'Commercial Plaza', image: Plaza, link: '/projects/commercial-plaza' },
+    { title: 'Luxury Villa', image: LuxuryVilla, link: '/projects/luxury-villa' },
   ];
 
   const cardsRef = useRef([]);
@@ -42,18 +44,15 @@ const Projects = () => {
       <h2>Featured Projects</h2>
       <div className="project-list">
         {projects.map((p, i) => (
-          <div
+          <Card
             key={i}
-            ref={(el) => (cardsRef.current[i] = el)}
+            to={p.link}
+            image={p.image}
+            alt={p.title}
+            title={p.title}
             className={`project-card vertical ${i % 2 === 0 ? 'left-slide' : 'right-slide'}`}
-          >
-            <div className="project-image">
-              <img src={p.image} alt={p.title} />
-            </div>
-            <div className="project-text">
-              <h3>{p.title}</h3>
-            </div>
-          </div>
+            ref={(el) => (cardsRef.current[i] = el)}
+          />
         ))}
       </div>
     </section>

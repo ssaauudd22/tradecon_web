@@ -164,10 +164,12 @@
 }
 
 /* Dropdown Menu */
+
 .dropdown-menu {
   position: absolute;
-  top: 120%; /* Below nav item */
+  top: 100%; /* Directly below nav item, no gap */
   left: 0;
+  margin-top: -2px; /* Slight overlap to prevent gap */
   background-color: #222;
   border-radius: 6px;
   min-width: 180px;
