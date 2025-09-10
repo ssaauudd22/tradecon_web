@@ -18,8 +18,8 @@ const Tenants = lazy(() => import('./components/Tenants'));
 const Listing = lazy(() => import('./components/Listing'));
 const ScheduleConsult = lazy(() => import('./components/ScheduleConsult'));
 const ResidentialComplex = lazy(() => import('./components/ResidentialComplex'));
-const CommercialPlaza = lazy(() => import('./components/CommercialPlaza'));
-const LuxuryVilla = lazy(() => import('./components/LuxuryVilla'));
+const Renovations = lazy(() => import('./components/Renovations'));
+const RentalProperties = lazy(() => import('./components/RentalProperties'));
 
 function Home() {
   return (
@@ -57,8 +57,8 @@ function App() {
                 <Route path="/listing" element={<Listing />} />
                 <Route path="/schedule-consult" element={<ScheduleConsult />} />
                 <Route path="/projects/residential-complex" element={<ResidentialComplex />} />
-                <Route path="/projects/commercial-plaza" element={<CommercialPlaza />} />
-                <Route path="/projects/luxury-villa" element={<LuxuryVilla />} />
+                <Route path="/projects/renovations" element={<Renovations />} />
+                <Route path="/projects/rental-properties" element={<RentalProperties />} />
               </Routes>
             </Suspense>
           </main>
