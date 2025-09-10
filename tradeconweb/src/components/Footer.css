@@ -1,0 +1,37 @@
+.footer {
+  background-color: #1f2937; /* dark gray */
+  color: white;
+  padding: 2rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contact {
+  margin-bottom: 1rem;
+}
+
+.footer-contact h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #a78bfa; /* lavender/purple */
+}
+
+.footer-contact a {
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  border-top: 1px solid #374151;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  color: #9ca3af;
+}

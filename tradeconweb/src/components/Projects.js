@@ -3,13 +3,13 @@ import React, { useEffect, useRef } from 'react';
 import Card from './Card';
 import BlackHouse from '../assets/BlackHouse.png';
 import Rental from '../assets/rental.png';
-import Plaza from '../assets/plaza.png';
+import Renovations from '../assets/renovations.png';
 
 const Projects = () => {
   const projects = [
     { title: 'Residential Complex', image: BlackHouse, link: '/projects/residential-complex' },
     { title: 'Rental Properties', image: Rental, link: '/projects/rental-properties' },
-    { title: 'Renovations', image: Plaza, link: '/projects/renovations' },
+    { title: 'Renovations', image: Renovations, link: '/projects/renovations' },
   ];
 
   const cardsRef = useRef([]);
