@@ -20,6 +20,7 @@ const ScheduleConsult = lazy(() => import('./components/ScheduleConsult'));
 const ResidentialComplex = lazy(() => import('./components/ResidentialComplex'));
 const Renovations = lazy(() => import('./components/Renovations'));
 const RentalProperties = lazy(() => import('./components/RentalProperties'));
+const AboutUs = lazy(() => import('./components/AboutUs'));
 
 function Home() {
   return (
@@ -59,6 +60,7 @@ function App() {
                 <Route path="/projects/residential-complex" element={<ResidentialComplex />} />
                 <Route path="/projects/renovations" element={<Renovations />} />
                 <Route path="/projects/rental-properties" element={<RentalProperties />} />
+                <Route path="/about" element={<AboutUs />} />
               </Routes>
             </Suspense>
           </main>

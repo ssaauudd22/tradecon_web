@@ -94,7 +94,7 @@ const Navbar = ({ toggleDark, darkMode }) => {
         </li>
 
         <li className="nav-item">
-          <Link to="/about-us" className="nav-link">About Us</Link>
+          <Link to="/about" className="nav-link">About Us</Link>
         </li>
       </ul>
 
