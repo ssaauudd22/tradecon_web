@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktradeconweb=self.webpackChunktradeconweb||[]).push([[412],{412:(e,n,r)=>{r.r(n),r.d(n,{default:()=>t});r(43);var s=r(579);const t=function(){return(0,s.jsxs)("div",{style:{padding:"2rem"},children:[(0,s.jsx)("h2",{children:"Tenants"}),(0,s.jsx)("p",{children:"This is a placeholder page for tenants. Add relevant content here."})]})}}}]);
+//# sourceMappingURL=412.e233f6fa.chunk.js.map

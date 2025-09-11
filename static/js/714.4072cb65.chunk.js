@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktradeconweb=self.webpackChunktradeconweb||[]).push([[714],{714:(e,r,t)=>{t.r(r),t.d(r,{default:()=>d});t(43);var s=t(579);const d=function(){return(0,s.jsxs)("div",{style:{padding:"2rem"},children:[(0,s.jsx)("h2",{children:"Rental Properties"}),(0,s.jsx)("p",{children:"This is a placeholder page for the Rental Properties project. Add project details here."})]})}}}]);
+//# sourceMappingURL=714.4072cb65.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktradeconweb=self.webpackChunktradeconweb||[]).push([[647],{647:(e,d,r)=>{r.r(d),r.d(d,{default:()=>t});r(43);var s=r(579);const t=function(){return(0,s.jsxs)("div",{style:{padding:"2rem"},children:[(0,s.jsx)("h2",{children:"Residential Complex"}),(0,s.jsx)("p",{children:"This is a placeholder page for the Residential Complex project. Add project details here."})]})}}}]);
+//# sourceMappingURL=647.658631e2.chunk.js.map

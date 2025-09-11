@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktradeconweb=self.webpackChunktradeconweb||[]).push([[785],{785:(e,r,n)=>{n.r(r),n.d(r,{default:()=>d});n(43);var s=n(579);const d=function(){return(0,s.jsxs)("div",{style:{padding:"2rem"},children:[(0,s.jsx)("h2",{children:"Owners"}),(0,s.jsx)("p",{children:"This is a placeholder page for property owners. Add relevant content here."})]})}}}]);
+//# sourceMappingURL=785.f6fe686e.chunk.js.map

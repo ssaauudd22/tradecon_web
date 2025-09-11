@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktradeconweb=self.webpackChunktradeconweb||[]).push([[898],{898:(e,n,r)=>{r.r(n),r.d(n,{default:()=>s});r(43);var c=r(579);const s=function(){return(0,c.jsxs)("div",{style:{padding:"2rem"},children:[(0,c.jsx)("h2",{children:"Schedule a Consult"}),(0,c.jsx)("p",{children:"This is a placeholder page for scheduling a consult. Add your form or contact info here."})]})}}}]);
+//# sourceMappingURL=898.f2d7e424.chunk.js.map

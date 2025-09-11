@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktradeconweb=self.webpackChunktradeconweb||[]).push([[153],{153:(e,r,o)=>{o.r(r),o.d(r,{default:()=>n});o(43);var t=o(579);const n=function(){return(0,t.jsxs)("div",{style:{padding:"2rem"},children:[(0,t.jsx)("h2",{children:"New Construction Portfolio"}),(0,t.jsx)("p",{children:"This is a placeholder for the New Construction portfolio. Add your projects here!"})]})}}}]);
+//# sourceMappingURL=153.646b3471.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktradeconweb=self.webpackChunktradeconweb||[]).push([[817],{817:(e,n,r)=>{r.r(n),r.d(n,{default:()=>t});r(43);var s=r(579);const t=function(){return(0,s.jsxs)("div",{style:{padding:"2rem"},children:[(0,s.jsx)("h2",{children:"Listing"}),(0,s.jsx)("p",{children:"This is a placeholder page for property listings. Add relevant content here."})]})}}}]);
+//# sourceMappingURL=817.45008914.chunk.js.map
